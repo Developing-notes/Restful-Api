@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #main {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/adduser" method="post">
+      <h1 id="main">Restful Api</h1>
+      <h2>Create User</h2>
+      <input
+        type="text"
+        id="userid"
+        name="userid"
+        placeholder="userid"
+      /><br /><br />
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="username"
+      /><br /><br />
+      <input type="text" id="dob" name="dob" placeholder="dob" /><br /><br />
+      <input
+        type="text"
+        id="profession"
+        name="profession"
+        placeholder="profession"
+      /><br /><br />
+      <button type="submit">Add User</button>
+    </form>
+
+    <h2>Get User</h2>
+    <form action="/particularuser" method="post">
+      <input
+        type="text"
+        id="urid"
+        name="urid"
+        placeholder="userid"
+      /><br /><br />
+
+      <button type="submit" name="submit">Check User</button>
+    </form>
+
+    <h2>Delete User</h2>
+    <form action="/deleteuser" method="post">
+      <input
+        type="text"
+        id="delid"
+        name="delid"
+        placeholder="userid"
+      /><br /><br />
+      <button type="submit" name="submit">delete User</button>
+    </form>
+
+    <h2>Show All</h2>
+    <form action="/showAll" method="get">
+      <button type="submit" name="submit">Show all</button>
+    </form>
+  </body>
+</html>
